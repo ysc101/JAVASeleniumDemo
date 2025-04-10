@@ -1,21 +1,47 @@
 version: 2.1
 
 executors:
-  java-executor:
+  java-chrome:
     docker:
       - image: cimg/openjdk:17.0
     working_directory: ~/repo
 
 jobs:
   build:
-    executor: java-executor
+    executor: java-chrome
     steps:
       - checkout
+
+      # Install Chrome dependencies
       - run:
-          name: Build with Maven
-          command: mvn clean install
+          name: Install Chrome and dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y wget unzip curl gnupg
+            sudo apt-get install -y libnss3 libxss1 libappindicator3-1 libasound2 libatk-bridge2.0-0 libgtk-3-0 libgbm-dev
+
+            # Install Google Chrome
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+
+      # Optional: Download matching ChromeDriver if you're not using WebDriverManager
+      # - run:
+      #     name: Download ChromeDriver
+      #     command: |
+      #       CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+      #       CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
+      #       wget -N https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip
+      #       unzip chromedriver_linux64.zip
+      #       sudo mv chromedriver /usr/local/bin/
+      #       sudo chmod +x /usr/local/bin/chromedriver
+
+      # Run your Maven Tests
+      - run:
+          name: Run Maven Tests
+          command: mvn clean test
 
 workflows:
+  version: 2
   build_and_test:
     jobs:
       - build
