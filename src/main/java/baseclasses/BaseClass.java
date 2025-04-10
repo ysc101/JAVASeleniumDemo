@@ -20,9 +20,9 @@ public static Map<String, String> mapAANumber = new HashMap<String, String>();
 public static Map<String, String> pannumberMap = new HashMap<String, String>();
 	public static WebDriver driver;
 	public void initializeBrowser() throws IOException {
-		String uniqueDir = "/tmp/chrome-profile-" + UUID.randomUUID();
+		//String uniqueDir = "/tmp/chrome-profile-" + UUID.randomUUID();
 		ChromeOptions options = new ChromeOptions();
-		//String uniqueDir = "/tmp/chrome-profile-" + System.currentTimeMillis();
+		String uniqueDir = "/tmp/chrome-profile-" + System.currentTimeMillis();
 	        options.addArguments("--no-sandbox");
 	        options.addArguments("--disable-dev-shm-usage");
 	        options.addArguments("--headless=new"); // use headless if running in CI
