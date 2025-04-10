@@ -22,8 +22,13 @@ public static Map<String, String> pannumberMap = new HashMap<String, String>();
 	public void initializeBrowser() throws IOException {
 		String uniqueDir = "/tmp/chrome-profile-" + UUID.randomUUID();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--user-data-dir=" + uniqueDir);
 		//String uniqueDir = "/tmp/chrome-profile-" + System.currentTimeMillis();
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
+	        options.addArguments("--headless=new"); // use headless if running in CI
+	        options.addArguments("--disable-gpu");
+	        options.addArguments("--remote-allow-origins=*");
+	    	options.addArguments("--user-data-dir=" + uniqueDir);
 		WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		driver = new ChromeDriver();

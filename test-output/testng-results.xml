@@ -1,73 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T17:12:24 IST" name="Default suite" finished-at="2025-04-10T17:12:57 IST" duration-ms="33024">
+  <suite started-at="2025-04-10T17:17:40 IST" name="Default suite" finished-at="2025-04-10T17:18:12 IST" duration-ms="32549">
     <groups>
     </groups>
-    <test started-at="2025-04-10T17:12:24 IST" name="Default test" finished-at="2025-04-10T17:12:57 IST" duration-ms="33024">
+    <test started-at="2025-04-10T17:17:40 IST" name="Default test" finished-at="2025-04-10T17:18:12 IST" duration-ms="32549">
       <class name="testpages.BeneficiaryCreationTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:24 IST" name="openBrowser" finished-at="2025-04-10T17:12:28 IST" duration-ms="4357" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:40 IST" name="openBrowser" finished-at="2025-04-10T17:17:48 IST" duration-ms="8234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="loginWithMaker()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:28 IST" name="loginWithMaker" finished-at="2025-04-10T17:12:30 IST" duration-ms="1758" status="PASS">
+        <test-method signature="loginWithMaker()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:48 IST" name="loginWithMaker" finished-at="2025-04-10T17:17:49 IST" duration-ms="926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithMaker -->
-        <test-method signature="MasterMenuisClickable()[pri:1, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:30 IST" name="MasterMenuisClickable" finished-at="2025-04-10T17:12:30 IST" duration-ms="119" status="PASS">
+        <test-method signature="MasterMenuisClickable()[pri:1, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:49 IST" name="MasterMenuisClickable" finished-at="2025-04-10T17:17:50 IST" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterMenuisClickable -->
-        <test-method signature="vendorcreationMenuisclickable()[pri:2, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:30 IST" name="vendorcreationMenuisclickable" finished-at="2025-04-10T17:12:30 IST" duration-ms="89" status="PASS">
+        <test-method signature="vendorcreationMenuisclickable()[pri:2, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:50 IST" name="vendorcreationMenuisclickable" finished-at="2025-04-10T17:17:51 IST" duration-ms="1265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcreationMenuisclickable -->
-        <test-method signature="BenefiicaryNamecanbeenter()[pri:3, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:30 IST" name="BenefiicaryNamecanbeenter" finished-at="2025-04-10T17:12:34 IST" duration-ms="4018" status="PASS">
+        <test-method signature="BenefiicaryNamecanbeenter()[pri:3, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:51 IST" name="BenefiicaryNamecanbeenter" finished-at="2025-04-10T17:17:51 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BenefiicaryNamecanbeenter -->
-        <test-method signature="MobileNumbercanbeenter()[pri:4, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:34 IST" name="MobileNumbercanbeenter" finished-at="2025-04-10T17:12:38 IST" duration-ms="3704" status="PASS">
+        <test-method signature="MobileNumbercanbeenter()[pri:4, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:51 IST" name="MobileNumbercanbeenter" finished-at="2025-04-10T17:17:53 IST" duration-ms="2160" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3990f2c9ff697b55410314dc7ba4f026, sendKeysToElement {id=f.4ED8B6F50D2DDB0EDE35A30DCD0AD960.d.F2ECC986CEC6739D6FA5737135425E8F.e.85, value=[Ljava.lang.CharSequence;@57435801}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Yogesh.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63226/devtoo..., se:cdpVersion: 135.0.7049.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3990f2c9ff697b55410314dc7ba4f026)] -> xpath: //input[@id='body_txtMobile']]
+Session ID: 3990f2c9ff697b55410314dc7ba4f026]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=135.0.7049.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3990f2c9ff697b55410314dc7ba4f026, sendKeysToElement {id=f.4ED8B6F50D2DDB0EDE35A30DCD0AD960.d.F2ECC986CEC6739D6FA5737135425E8F.e.85, value=[Ljava.lang.CharSequence;@57435801}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.43, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Yogesh.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63226/devtoo..., se:cdpVersion: 135.0.7049.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3990f2c9ff697b55410314dc7ba4f026)] -> xpath: //input[@id='body_txtMobile']]
+Session ID: 3990f2c9ff697b55410314dc7ba4f026
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at pom.BeneficiaryCreation.entermobilenumberdetails(BeneficiaryCreation.java:187)
+at testpages.BeneficiaryCreationTest.MobileNumbercanbeenter(BeneficiaryCreationTest.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileNumbercanbeenter -->
-        <test-method signature="emailIDcanbeenter()[pri:5, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:38 IST" name="emailIDcanbeenter" finished-at="2025-04-10T17:12:40 IST" duration-ms="1720" status="PASS">
+        <test-method signature="emailIDcanbeenter()[pri:5, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:53 IST" name="emailIDcanbeenter" finished-at="2025-04-10T17:17:55 IST" duration-ms="1723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailIDcanbeenter -->
-        <test-method signature="Addresscanbeenter()[pri:6, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:40 IST" name="Addresscanbeenter" finished-at="2025-04-10T17:12:41 IST" duration-ms="1661" status="PASS">
+        <test-method signature="Addresscanbeenter()[pri:6, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:55 IST" name="Addresscanbeenter" finished-at="2025-04-10T17:17:57 IST" duration-ms="1676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addresscanbeenter -->
-        <test-method signature="vendorpincodecanbeenter()[pri:7, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:41 IST" name="vendorpincodecanbeenter" finished-at="2025-04-10T17:12:43 IST" duration-ms="1681" status="PASS">
+        <test-method signature="vendorpincodecanbeenter()[pri:7, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:57 IST" name="vendorpincodecanbeenter" finished-at="2025-04-10T17:17:59 IST" duration-ms="1669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorpincodecanbeenter -->
-        <test-method signature="vendorcitycanbeenter()[pri:8, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:43 IST" name="vendorcitycanbeenter" finished-at="2025-04-10T17:12:45 IST" duration-ms="1649" status="PASS">
+        <test-method signature="vendorcitycanbeenter()[pri:8, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:17:59 IST" name="vendorcitycanbeenter" finished-at="2025-04-10T17:18:00 IST" duration-ms="1633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcitycanbeenter -->
-        <test-method signature="vendorpancanbeenter()[pri:9, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:45 IST" name="vendorpancanbeenter" finished-at="2025-04-10T17:12:46 IST" duration-ms="1676" status="PASS">
+        <test-method signature="vendorpancanbeenter()[pri:9, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:18:00 IST" name="vendorpancanbeenter" finished-at="2025-04-10T17:18:02 IST" duration-ms="1655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorpancanbeenter -->
-        <test-method signature="vendorcanentertanno()[pri:10, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:46 IST" name="vendorcanentertanno" finished-at="2025-04-10T17:12:48 IST" duration-ms="2168" status="PASS">
+        <test-method signature="vendorcanentertanno()[pri:10, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:18:02 IST" name="vendorcanentertanno" finished-at="2025-04-10T17:18:04 IST" duration-ms="2186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcanentertanno -->
-        <test-method signature="vendorcanentergstno()[pri:11, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:48 IST" name="vendorcanentergstno" finished-at="2025-04-10T17:12:51 IST" duration-ms="2185" status="PASS">
+        <test-method signature="vendorcanentergstno()[pri:11, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:18:04 IST" name="vendorcanentergstno" finished-at="2025-04-10T17:18:06 IST" duration-ms="2173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcanentergstno -->
-        <test-method signature="enteraddharno()[pri:12, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:51 IST" name="enteraddharno" finished-at="2025-04-10T17:12:53 IST" duration-ms="2171" status="PASS">
+        <test-method signature="enteraddharno()[pri:12, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:18:06 IST" name="enteraddharno" finished-at="2025-04-10T17:18:08 IST" duration-ms="2164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enteraddharno -->
-        <test-method signature="enterifscode()[pri:13, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:53 IST" name="enterifscode" finished-at="2025-04-10T17:12:54 IST" duration-ms="1665" status="PASS">
+        <test-method signature="enterifscode()[pri:13, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:18:08 IST" name="enterifscode" finished-at="2025-04-10T17:18:10 IST" duration-ms="1664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterifscode -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:54 IST" name="CloseBrowser" finished-at="2025-04-10T17:12:57 IST" duration-ms="2328" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:18:10 IST" name="CloseBrowser" finished-at="2025-04-10T17:18:12 IST" duration-ms="2346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

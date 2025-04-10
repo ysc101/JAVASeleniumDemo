@@ -5,21 +5,8 @@
     <classes>
       <class name="testpages.BeneficiaryCreationTest">
         <methods>
-          <include name="vendorcreationMenuisclickable"/>
-          <include name="MasterMenuisClickable"/>
-          <include name="vendorcanentergstno"/>
-          <include name="vendorcitycanbeenter"/>
-          <include name="vendorpincodecanbeenter"/>
-          <include name="emailIDcanbeenter"/>
-          <include name="CloseBrowser"/>
-          <include name="enterifscode"/>
-          <include name="enteraddharno"/>
-          <include name="vendorpancanbeenter"/>
-          <include name="BenefiicaryNamecanbeenter"/>
           <include name="MobileNumbercanbeenter"/>
-          <include name="vendorcanentertanno"/>
-          <include name="Addresscanbeenter"/>
-          <include name="loginWithMaker"/>
+          <include name="CloseBrowser"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- testpages.BeneficiaryCreationTest -->
