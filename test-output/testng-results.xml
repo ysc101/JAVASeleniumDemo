@@ -2,72 +2,72 @@
 <testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T16:55:28 IST" name="Default suite" finished-at="2025-04-10T16:56:02 IST" duration-ms="34012">
+  <suite started-at="2025-04-10T17:12:24 IST" name="Default suite" finished-at="2025-04-10T17:12:57 IST" duration-ms="33024">
     <groups>
     </groups>
-    <test started-at="2025-04-10T16:55:28 IST" name="Default test" finished-at="2025-04-10T16:56:02 IST" duration-ms="34012">
+    <test started-at="2025-04-10T17:12:24 IST" name="Default test" finished-at="2025-04-10T17:12:57 IST" duration-ms="33024">
       <class name="testpages.BeneficiaryCreationTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:28 IST" name="openBrowser" finished-at="2025-04-10T16:55:37 IST" duration-ms="8992" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:24 IST" name="openBrowser" finished-at="2025-04-10T17:12:28 IST" duration-ms="4357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="loginWithMaker()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:37 IST" name="loginWithMaker" finished-at="2025-04-10T16:55:38 IST" duration-ms="878" status="PASS">
+        <test-method signature="loginWithMaker()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:28 IST" name="loginWithMaker" finished-at="2025-04-10T17:12:30 IST" duration-ms="1758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithMaker -->
-        <test-method signature="MasterMenuisClickable()[pri:1, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:38 IST" name="MasterMenuisClickable" finished-at="2025-04-10T16:55:39 IST" duration-ms="1172" status="PASS">
+        <test-method signature="MasterMenuisClickable()[pri:1, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:30 IST" name="MasterMenuisClickable" finished-at="2025-04-10T17:12:30 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MasterMenuisClickable -->
-        <test-method signature="vendorcreationMenuisclickable()[pri:2, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:39 IST" name="vendorcreationMenuisclickable" finished-at="2025-04-10T16:55:39 IST" duration-ms="308" status="PASS">
+        <test-method signature="vendorcreationMenuisclickable()[pri:2, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:30 IST" name="vendorcreationMenuisclickable" finished-at="2025-04-10T17:12:30 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcreationMenuisclickable -->
-        <test-method signature="BenefiicaryNamecanbeenter()[pri:3, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:39 IST" name="BenefiicaryNamecanbeenter" finished-at="2025-04-10T16:55:39 IST" duration-ms="95" status="PASS">
+        <test-method signature="BenefiicaryNamecanbeenter()[pri:3, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:30 IST" name="BenefiicaryNamecanbeenter" finished-at="2025-04-10T17:12:34 IST" duration-ms="4018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BenefiicaryNamecanbeenter -->
-        <test-method signature="MobileNumbercanbeenter()[pri:4, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:39 IST" name="MobileNumbercanbeenter" finished-at="2025-04-10T16:55:43 IST" duration-ms="3629" status="PASS">
+        <test-method signature="MobileNumbercanbeenter()[pri:4, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:34 IST" name="MobileNumbercanbeenter" finished-at="2025-04-10T17:12:38 IST" duration-ms="3704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileNumbercanbeenter -->
-        <test-method signature="emailIDcanbeenter()[pri:5, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:43 IST" name="emailIDcanbeenter" finished-at="2025-04-10T16:55:45 IST" duration-ms="1727" status="PASS">
+        <test-method signature="emailIDcanbeenter()[pri:5, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:38 IST" name="emailIDcanbeenter" finished-at="2025-04-10T17:12:40 IST" duration-ms="1720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailIDcanbeenter -->
-        <test-method signature="Addresscanbeenter()[pri:6, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:45 IST" name="Addresscanbeenter" finished-at="2025-04-10T16:55:46 IST" duration-ms="1679" status="PASS">
+        <test-method signature="Addresscanbeenter()[pri:6, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:40 IST" name="Addresscanbeenter" finished-at="2025-04-10T17:12:41 IST" duration-ms="1661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Addresscanbeenter -->
-        <test-method signature="vendorpincodecanbeenter()[pri:7, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:46 IST" name="vendorpincodecanbeenter" finished-at="2025-04-10T16:55:48 IST" duration-ms="1642" status="PASS">
+        <test-method signature="vendorpincodecanbeenter()[pri:7, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:41 IST" name="vendorpincodecanbeenter" finished-at="2025-04-10T17:12:43 IST" duration-ms="1681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorpincodecanbeenter -->
-        <test-method signature="vendorcitycanbeenter()[pri:8, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:48 IST" name="vendorcitycanbeenter" finished-at="2025-04-10T16:55:50 IST" duration-ms="1617" status="PASS">
+        <test-method signature="vendorcitycanbeenter()[pri:8, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:43 IST" name="vendorcitycanbeenter" finished-at="2025-04-10T17:12:45 IST" duration-ms="1649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcitycanbeenter -->
-        <test-method signature="vendorpancanbeenter()[pri:9, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:50 IST" name="vendorpancanbeenter" finished-at="2025-04-10T16:55:51 IST" duration-ms="1677" status="PASS">
+        <test-method signature="vendorpancanbeenter()[pri:9, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:45 IST" name="vendorpancanbeenter" finished-at="2025-04-10T17:12:46 IST" duration-ms="1676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorpancanbeenter -->
-        <test-method signature="vendorcanentertanno()[pri:10, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:51 IST" name="vendorcanentertanno" finished-at="2025-04-10T16:55:53 IST" duration-ms="2177" status="PASS">
+        <test-method signature="vendorcanentertanno()[pri:10, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:46 IST" name="vendorcanentertanno" finished-at="2025-04-10T17:12:48 IST" duration-ms="2168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcanentertanno -->
-        <test-method signature="vendorcanentergstno()[pri:11, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:53 IST" name="vendorcanentergstno" finished-at="2025-04-10T16:55:56 IST" duration-ms="2167" status="PASS">
+        <test-method signature="vendorcanentergstno()[pri:11, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:48 IST" name="vendorcanentergstno" finished-at="2025-04-10T17:12:51 IST" duration-ms="2185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vendorcanentergstno -->
-        <test-method signature="enteraddharno()[pri:12, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:56 IST" name="enteraddharno" finished-at="2025-04-10T16:55:58 IST" duration-ms="2160" status="PASS">
+        <test-method signature="enteraddharno()[pri:12, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:51 IST" name="enteraddharno" finished-at="2025-04-10T17:12:53 IST" duration-ms="2171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enteraddharno -->
-        <test-method signature="enterifscode()[pri:13, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:58 IST" name="enterifscode" finished-at="2025-04-10T16:55:59 IST" duration-ms="1684" status="PASS">
+        <test-method signature="enterifscode()[pri:13, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:53 IST" name="enterifscode" finished-at="2025-04-10T17:12:54 IST" duration-ms="1665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterifscode -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T16:55:59 IST" name="CloseBrowser" finished-at="2025-04-10T16:56:02 IST" duration-ms="2321" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testpages.BeneficiaryCreationTest@4e3958e7]" started-at="2025-04-10T17:12:54 IST" name="CloseBrowser" finished-at="2025-04-10T17:12:57 IST" duration-ms="2328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
