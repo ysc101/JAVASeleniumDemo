@@ -183,10 +183,9 @@ public class BeneficiaryCreation extends BaseClass {
 
 	public void entermobilenumberdetails()
 			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
-		Thread.sleep(1500);
-
 		mobile.sendKeys(CommonUtils.getExcelData(3, 1));
 		mobile.sendKeys(Keys.TAB);
+		Thread.sleep(1500);
 
 	}
 
@@ -228,4 +227,20 @@ public class BeneficiaryCreation extends BaseClass {
 		vendortan.sendKeys(Keys.TAB);
 		Thread.sleep(2000);
 	}
+	public void entergstnumber() throws EncryptedDocumentException, IOException, InterruptedException {
+		vendorgst.sendKeys(CommonUtils.getExcelData(10, 1));
+		vendorgst.sendKeys(Keys.TAB);
+		Thread.sleep(2000);
+	}
+	public void enteradhaarnumber() throws EncryptedDocumentException, IOException, InterruptedException {
+		vendoradhar.sendKeys(CommonUtils.getExcelData(11, 1));
+		vendoradhar.sendKeys(Keys.TAB);
+		Thread.sleep(2000);
+	}
+	public void enterIFSCCode() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		vendorIFSC.sendKeys(CommonUtils.getExcelData(12, 1));
+		vendorIFSC.sendKeys(Keys.TAB);
+		Thread.sleep(1500);
+	}
+	
 }

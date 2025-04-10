@@ -81,7 +81,19 @@ public class BeneficiaryCreationTest extends BaseClass {
 	public void vendorcanentertanno() throws EncryptedDocumentException, IOException, InterruptedException {
 		objBeneficiaryCreationpage.entertannumber();
 	}
-
+	@Test(priority=11)
+	public void vendorcanentergstno() throws EncryptedDocumentException, IOException, InterruptedException {
+		
+	objBeneficiaryCreationpage.entergstnumber();
+	}
+	@Test(priority=12)
+	public void enteraddharno() throws EncryptedDocumentException, IOException, InterruptedException {
+		objBeneficiaryCreationpage.enteradhaarnumber();
+	}
+	@Test(priority=13)
+	public void enterifscode() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.enterIFSCCode();
+	}
 	@AfterClass
 	public void CloseBrowser() throws InterruptedException {
 		Thread.sleep(2000);
