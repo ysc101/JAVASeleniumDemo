@@ -94,6 +94,72 @@ public class BeneficiaryCreationTest extends BaseClass {
 	public void enterifscode() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
 		objBeneficiaryCreationpage.enterIFSCCode();
 	}
+	@Test(priority=14)
+	public void usercanenteraccountnumber() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.enterVendorAccountnumber();
+	}
+	@Test(priority=15)
+	public void usercanenterConfirmVendorAccountnumber() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.ConfirmVendorAccountnumber();
+	}
+	@Test(priority=16)
+	public void usercanuploadpassbookcopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.fileuploadforpassboookcopy();
+	}
+//	@Test(priority = 32) 
+//	public void uploadPNGFileAndHandelPopUpPassbook() throws EncryptedDocumentException, IOException, InterruptedException {
+//		objBeneficiaryCreationpage.verifyUploadPNGFileAndPopupIsDisplayedPassbook(); 
+//	}
+	@Test(priority=17)
+	public void Okbuttonisclickable()
+			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.clickokafterfileupload();
+	}
+	@Test(priority=18)
+	public void usercanuploadChequecopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.fileuploadforchequecopy();
+	}
+	@Test(priority=19)
+	public void Okbuttonisclickableforcheque()
+			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.clickokafterfileupload();
+	}
+	@Test(priority=20)
+	public void usercanuploadpancopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.fileuploadforpancopy();
+	}
+	@Test(priority=21)
+	public void Okbuttonisclickableforpan()
+			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.clickokafterfileupload();
+	}
+	@Test(priority=22)
+	public void usercanuploadtancopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.fileuploadfortancopy();
+	}
+	@Test(priority=23)
+	public void Okbuttonisclickablefortan()
+			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.clickokafterfileupload();
+	}
+	@Test(priority=24)
+	public void usercanuploadgstcopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.fileuploadforgstcopy();
+	}
+	@Test(priority=25)
+	public void Okbuttonisclickableforgst()
+			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.clickokafterfileupload();
+	}
+	@Test(priority=26)
+	public void usercanuploadadhaarcopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.fileuploadforadhaarcopy();
+	}
+	@Test(priority=27)
+	public void Okbuttonisclickableforadhaar()
+			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		objBeneficiaryCreationpage.clickokafterfileupload();
+	}
 	@AfterClass
 	public void CloseBrowser() throws InterruptedException {
 		Thread.sleep(2000);

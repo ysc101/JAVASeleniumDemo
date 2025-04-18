@@ -1,7 +1,7 @@
 package pom;
 
 import java.awt.AWTException;
-
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -103,7 +103,7 @@ public class BeneficiaryCreation extends BaseClass {
 	@FindBy(xpath = "//input[@id='FileUploadAadhar']")
 	public WebElement fileuploadadhar;
 
-	@FindBy(xpath = "//input[@id='body_btnHide']")
+	@FindBy(id = "Button5")
 	public WebElement fileuploadok;
 
 	@FindBy(xpath = "//span[@id='body_lblFileUploadPassbook']")
@@ -242,5 +242,50 @@ public class BeneficiaryCreation extends BaseClass {
 		vendorIFSC.sendKeys(Keys.TAB);
 		Thread.sleep(1500);
 	}
-	
+	public void enterVendorAccountnumber() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		vendoracc.sendKeys(CommonUtils.getExcelData(13, 1));
+		vendoracc.sendKeys(Keys.TAB);
+		Thread.sleep(1500);
+	}
+	public void ConfirmVendorAccountnumber() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		vendoraccconfirm.sendKeys(CommonUtils.getExcelData(14, 1));
+		vendoraccconfirm.sendKeys(Keys.TAB);
+		Thread.sleep(1500);
+	}
+	public void fileuploadforpassboookcopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+	    Thread.sleep(1500);
+	    File adharfile = new File("src/test/resources/PASSBOOK_DOCUMENT.pdf");
+	    fileuploadpassboook.sendKeys(adharfile.getAbsolutePath());
+        Thread.sleep(1500);	
+	}
+	public void clickokafterfileupload()
+			throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		fileuploadok.click();
+		Thread.sleep(1500);
+	}
+	public void fileuploadforchequecopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		File Chequefile = new File("src/test/resources/CHEQUE_DOCUMENT.pdf");
+		fileuploadcheque.sendKeys(Chequefile.getAbsolutePath());
+        Thread.sleep(1500);
+	}
+	public void fileuploadforpancopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		File PANfile = new File("src/test/resources/PAN_DOCUMENT.pdf");
+		fileuploadpan.sendKeys(PANfile.getAbsolutePath());
+        Thread.sleep(1500);
+	}
+	public void fileuploadfortancopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		File TANFile = new File("src/test/resources/TAN_DOCUMENT.pdf");
+		fileuploadtan.sendKeys(TANFile.getAbsolutePath());
+        Thread.sleep(1500);
+	}
+	public void fileuploadforgstcopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		File GSTFile = new File("src/test/resources/GST_DOCUMENT.pdf");
+		fileuploadgst.sendKeys(GSTFile.getAbsolutePath());
+        Thread.sleep(1500);
+	}
+	public void fileuploadforadhaarcopy() throws EncryptedDocumentException, IOException, AWTException, InterruptedException {
+		File AdharFile = new File("src/test/resources/ADHAR_DOCUMENT.pdf");
+		fileuploadadhar.sendKeys(AdharFile.getAbsolutePath());
+        Thread.sleep(1500);
+	}
 }

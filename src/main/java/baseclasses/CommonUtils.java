@@ -37,10 +37,21 @@ public class CommonUtils extends BaseClass
 	// This Method is use for fetch the external Excel sheet Data
 
 	// need to pass 2 Parameter 1 is int row and 2 is int column
-
 	public static String getExcelData(int rowIndex, int colIndex) throws EncryptedDocumentException, IOException {
-		FileInputStream file = new FileInputStream("E:\\ZPFMS_TEST_DATA.xlsx");
-		String value = WorkbookFactory.create(file).getSheet("ZPFMS_TEST_DATA").getRow(rowIndex).getCell(colIndex).getStringCellValue();
-		return value;
-	}
+        String filePath = "src/test/resources/ZPFMS_TEST_DATA.xlsx"; // relative path for Maven project
+
+        try (FileInputStream file = new FileInputStream(filePath)) {
+            Workbook workbook = WorkbookFactory.create(file);
+            String value = workbook
+                            .getSheet("ZPFMS_TEST_DATA")
+                            .getRow(rowIndex)
+                            .getCell(colIndex)
+                            .getStringCellValue();
+
+            return value;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new IOException("❌ Error reading Excel data: " + e.getMessage());
+        }
+    }
 }

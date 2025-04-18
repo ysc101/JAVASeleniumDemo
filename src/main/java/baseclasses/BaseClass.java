@@ -1,46 +1,71 @@
 package baseclasses;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
-import org.openqa.selenium.WebDriver;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import java.util.HashMap;
-
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
 
-public static Map<String, String> mapAANumber = new HashMap<String, String>();
-public static Map<String, String> pannumberMap = new HashMap<String, String>();
-	public static WebDriver driver;
-	public void initializeBrowser() throws IOException {
-		//String uniqueDir = "/tmp/chrome-profile-" + UUID.randomUUID();
-		ChromeOptions options = new ChromeOptions();
-		String uniqueDir = "/tmp/chrome-profile-" + System.currentTimeMillis();
-	        options.addArguments("--no-sandbox");
-	        options.addArguments("--disable-dev-shm-usage");
-	        options.addArguments("--headless=new"); // use headless if running in CI
-	        options.addArguments("--disable-gpu");
-	        options.addArguments("--remote-allow-origins=*");
-	    	options.addArguments("--user-data-dir=" + uniqueDir);
-		WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.http.factory", "jdk-http-client");
-		driver = new ChromeDriver();
-		driver.get("https://ps.demofms.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}
-	}
+    public static Map<String, String> mapAANumber = new HashMap<>();
+    public static Map<String, String> pannumberMap = new HashMap<>();
+    public static WebDriver driver;
 
+    public void initializeBrowser() throws IOException {
+        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
 
+        ChromeOptions options = new ChromeOptions();
 
+        String os = System.getProperty("os.name").toLowerCase();
+        if (os.contains("windows")) {
+            System.out.println("Running in GUI mode on Windows.");
+        } else {
+            System.out.println("Running in headless mode (CI/CD/Linux).");
+            options.addArguments("--headless=new");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--window-size=1920,1080");
+        }
 
-	 	 
+        driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://ps.demofms.com/");
+        waitForPageLoad();  // ensure page is fully loaded
+    }
 
+    // Wait until the document is fully loaded
+    public void waitForPageLoad() {
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(webDriver ->
+            ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+    }
 
+    // Wait for element to be visible
+    public WebElement waitForElement(By locator) {
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    // Optional: Take screenshot on failure
+    public void takeScreenshot(String testName) {
+        try {
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(src, new File("target/screenshots/" + testName + ".png"));
+        } catch (Exception e) {
+            System.out.println("Screenshot capture failed: " + e.getMessage());
+        }
+    }
+}
